@@ -1,0 +1,361 @@
+ /* fundo escuro e fonte padrão */
+    body {
+      background-color: #0f0f0f;
+      color: #eeeeee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* centralizar o conteúdo na tela */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px; 
+    }
+    .banner{
+      width: 900x;
+      height: 500px;
+      
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      margin-top: 60px;
+      border-radius: 10px;
+}
+
+    /*CABEÇALHO*/
+    header {
+      background-color: #1a1a1a;
+      border-bottom: 2px solid #e60026;
+      padding: 16px 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    header h1 span {
+      color: #e60026; /* parte em vermelho */
+    }
+
+    header p {
+      font-size: 0.8rem;
+      color: #888;
+      margin: 4px 0 0;
+    }
+
+    /* ========================
+       NAVEGAÇÃO
+    ======================== */
+    nav {
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #333;
+      padding: 10px 0;
+      position: sticky; /* fica fixo ao rolar */
+      top: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      color: #ca2424;
+      text-transform: uppercase;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+
+
+    /*CONTEÚDO + SIDEBAR*/
+    .pagina {
+      display: flex;
+      gap: 24px;
+      padding: 24px 0;
+    }
+
+    main {
+      flex: 1; /* ocupa o espaço que sobra */
+    }
+
+    aside {
+      width: 260px;
+      flex-shrink: 0; /* não encolhe */
+    }
+
+    /*NOTÍCIA EM DESTAQUE*/
+    .destaque {
+      background-color: #1a1a1a;
+      margin-bottom: 24px;
+    }
+
+    .destaque img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover; /* imagem não distorce */
+      display: block;
+    }
+
+    .destaque .info {
+      padding: 16px;
+    }
+
+    .destaque h2 {
+      font-size: 1.5rem;
+      margin: 8px 0;
+    }
+
+    .destaque p {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin: 0 0 8px;
+    }
+
+    /*GRADE DE NOTÍCIAS*/
+    .grade {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .card .info {
+      padding: 12px;
+    }
+
+    .card h3 {
+      font-size: 0.95rem;
+      margin: 6px 0;
+    }
+
+    .card p {
+      font-size: 0.8rem;
+      color: #888;
+      margin: 0;
+    }
+
+    /*ARTIGO (página de leitura) */
+    .artigo img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .artigo h2 {
+      font-size: 1.8rem;
+      margin: 0 0 8px;
+      margin-top: 60px;
+    }
+
+    .artigo .meta {
+      font-size: 0.78rem;
+      color: #888;
+      margin-bottom: 16px;
+    }
+
+    .artigo p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 1em;
+    }
+
+    /* formulário */
+    .form-grupo {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .form-grupo label {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .form-grupo input,
+    .form-grupo textarea {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #eee;
+      padding: 8px 12px;
+      font-size: 0.875rem;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-grupo input:focus,
+    .form-grupo textarea:focus {
+      outline: none;
+      border-color: #00bfff; /* destaque azul ao focar */
+    }
+
+    .form-grupo textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      background: #e60026;
+      color: #fff;
+      border: none;
+      padding: 9px 20px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+
+    button:hover {
+      background: #ff1a40;
+    }
+
+    /* avatar com iniciais */
+    .avatar {
+      width: 40px;
+      height: 40px;
+      background: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+    
+    
+
+    /*SIDEBAR*/
+    .widget {
+      background: #1a1a1a;
+      padding: 16px;
+      margin-bottom: 20px;
+    }
+
+    .widget h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: #00bfff;
+      margin: 0 0 12px;
+      letter-spacing: 0.1em;
+    }
+
+    /* lista numerada das mais lidas */
+    .mais-lidas {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: num;
+    }
+
+    .mais-lidas li {
+      counter-increment: num;
+      display: flex;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid #2a2a2a;
+      align-items: flex-start;
+    }
+
+    .mais-lidas li::before {
+      content: counter(num);
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #333;
+      line-height: 1;
+    }
+
+    .mais-lidas a {
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+
+    .mais-lidas a:hover {
+      color: #fff;
+    }
+
+    /* nuvem de tags */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tags a {
+      border: 1px solid #333;
+      padding: 3px 10px;
+      font-size: 0.75rem;
+      color: #aaa;
+      border-radius: 3px;
+    }
+
+    .tags a:hover {
+      border-color: #00bfff;
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    /*RODAPÉ*/
+    footer {
+      background: #1a1a1a;
+      border-top: 2px solid #e60026;
+      padding: 24px 0;
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #666;
+      text-align: center;
+    }
+
+    /*RESPONSIVO (celular)*/
+    @media (max-width: 768px) {
+      .pagina {
+        flex-direction: column; /* empilha main e aside */
+      }
+
+      aside {
+        width: 100%;
+      }
+
+      .grade {
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+      }
+    }
+  
